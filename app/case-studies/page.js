@@ -1,0 +1,4 @@
+import CTA from "../../components/CTA"; export const metadata={title:"Case Studies — Sidekick Automation"};
+const studies=[{title:"Maintenance Dashboard for Manufacturing",result:"Cut weekly reporting time by 80%",details:"Automated login, data export, and beautiful charts."},{title:"Predictive Insights for Sports App",result:"Delivered a full Flask app with model predictions",details:"Pipeline, retraining, printable reports."}];
+export default function CaseStudies(){return(<><h1>Case Studies</h1><p className="text-white/70 mt-2">Real projects. Real results.</p>
+<div className="grid gap-6 mt-8">{studies.map((c,i)=>(<div key={i} className="card"><h3>{c.title}</h3><p className="mt-2 text-brand-teal font-semibold">{c.result}</p><p className="mt-1 text-white/70">{c.details}</p></div>))}</div><CTA/></>);}
