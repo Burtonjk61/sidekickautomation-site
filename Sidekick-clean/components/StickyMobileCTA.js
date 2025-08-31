@@ -1,1 +1,0 @@
-export default function StickyMobileCTA(){return(<a href="/book" className="md:hidden fixed bottom-5 right-5 z-50 btn btn-primary shadow-glow">📅 Book a Call</a>);}

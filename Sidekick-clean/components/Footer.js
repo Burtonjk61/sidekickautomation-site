@@ -1,1 +1,0 @@
-export default function Footer(){return(<footer className="border-t border-white/10 mt-20"><div className="container-p py-10 text-sm text-white/70 flex flex-col md:flex-row items-center justify-between gap-4"><p>© 2025 Sidekick Automation. All rights reserved.</p><p>Built with ❤️ and lots of coffee.</p></div></footer>);}
