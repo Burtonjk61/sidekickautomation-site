@@ -1,0 +1,29 @@
+backend:
+  name: github
+  repo: Burtonjk61/sidekickautomation-site   # << change if your repo name differs
+  branch: main
+  auth_type: implicit
+  app_id: Ov23lixjb7w00vdDBJG9       # << you'll paste this in Step 7
+
+media_folder: "public/uploads"
+public_folder: "/uploads"
+
+publish_mode: editorial_workflow
+site_url: "https://www.sidekickautomation.com"
+
+collections:
+  - name: "posts"
+    label: "Posts"
+    folder: "content/posts"
+    create: true
+    slug: "{{slug}}"
+    format: "frontmatter"
+    extension: "mdx"
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Date", name: "date", widget: "datetime" }
+      - { label: "Cover Image", name: "cover", widget: "image", required: false }
+      - { label: "Tags", name: "tags", widget: "list", required: false }
+      - { label: "Draft", name: "draft", widget: "boolean", default: false }
+      - { label: "Body", name: "body", widget: "markdown" }
