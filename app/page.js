@@ -2,6 +2,10 @@
 import Image from "next/image";
 import Link from "next/link";
 
+// ✅ add these imports at the very top
+import SocialProof from "@/components/SocialProof";
+import StrongCTA from "@/components/StrongCTA";
+
 export default function HomePage() {
   return (
     <>
@@ -55,6 +59,10 @@ export default function HomePage() {
           </div>
         </div>
       </section>
+
+      {/* ✅ New trust + call-to-action sections */}
+      <SocialProof />
+      <StrongCTA />
     </>
   );
 }
